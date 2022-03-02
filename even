@@ -1,0 +1,21 @@
+#include <stdio.h>
+int fun(int num);
+int main()
+{
+    enum check{no,yes};//no=0,yes=1
+   int num;
+   printf("enter num:");
+   scanf("%d",&num);
+  int res= fun(num);
+  if(res==no)
+  printf("odd");
+  else
+  printf("even");
+   }
+int fun(int num){
+    int no,yes;
+    if(num%2==no)
+    return yes;//if it is even it return yes
+    else
+ return no;
+}
