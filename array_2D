@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+#define ROWS 2
+#define COLS 3
+
+int main()
+{
+    int i,j;
+    int a[ROWS][COLS]={10,20,30,40,50,60};//mthod 1
+    int b[ROWS][COLS]={{100,200.300},{400,500,600}};//method 2
+printf("%d",a[0][1]);//accessing 0th row and first column
+printf("%d",a[1][0]);//accessing first row zero column
+for(i=0;i<ROWS;i++){
+    for(j=0;j<COLS;j++){
+       printf("&a[%d][%d]=%p,value is =%d\n",i,j,&a[i][j],a[i][j]);
+    }
+}
+printf("base add of the array=%p\n,add of the first element=%p",a,&a[0][0]);
+}
